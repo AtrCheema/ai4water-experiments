@@ -17,8 +17,7 @@ keras-tcn
 sphinx-gallery
 xgboost
 
-xarray
-netcdf4
+xarray==0.20.1
 openpyxl
 requests
 
