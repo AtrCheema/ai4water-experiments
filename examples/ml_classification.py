@@ -3,6 +3,7 @@
 Machine learning algorithms for classification
 ===============================================
 """
+
 from ai4water.datasets import MtropicsLaos
 from ai4water.experiments import MLClassificationExperiments
 
@@ -27,10 +28,11 @@ exp = MLClassificationExperiments(
 )
 
 # %%
-exp.fit(data=data)
+exp.fit(data=data,
+        exclude=['LinearDiscriminantAnalysis'])
 
 # %%
 exp.plot_cv_scores(data=data)
 
 # %%
-exp.compare_precision_recall_curves(data=data)
+exp.compare_precision_recall_curves(data[inputs].values, data[outputs].values)

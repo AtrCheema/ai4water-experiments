@@ -3,6 +3,7 @@
 Neural Networks for classification
 ====================================
 """
+
 from ai4water.hyperopt import Categorical
 from ai4water.datasets import MtropicsLaos
 from ai4water.experiments import DLClassificationExperiments
@@ -24,7 +25,7 @@ outputs = data.columns.tolist()[-1:]
 exp = DLClassificationExperiments(
     input_features=inputs,
     output_features=outputs,
-    epochs=5,
+    epochs=50,
     ts_args={"lookback": lookback},
     save=False
 )
@@ -36,3 +37,5 @@ exp.batch_size_space = Categorical(categories=[4, 8, 12, 16, 32],
 # %%
 exp.fit(data=data,
         include=["MLP", "CNN", "LSTM", "TFT"])
+
+exp.compare_errors('accuracy', data=data)
