@@ -14,16 +14,10 @@ keras-tcn
 sphinx-gallery
 xgboost
 
-# for hru discretization examples
-pyshp
-shapely
-
-#
-shap
-lime
-
-#
-
+xarray
+netcdf4
+openpyxl
+requests
 
 git+https://github.com/AtrCheema/AI4Water.git@dev
 
