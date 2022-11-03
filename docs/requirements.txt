@@ -23,6 +23,4 @@ requests
 
 git+https://github.com/AtrCheema/AI4Water.git@dev
 
-git+https://github.com/AtrCheema/SeqMetrics.git
-
 git+https://github.com/Sara-Iftikhar/easy_mpl.git@dev

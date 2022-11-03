@@ -32,7 +32,7 @@ dataset = MtropicsLaos()
 
 # %%
 #exp.batch_size_space = Categorical(categories=[4, 8, 12, 16, 32],
-                                   name="batch_size")
+#                                   name="batch_size")
 
 # %%
 #exp.fit(data=data,
